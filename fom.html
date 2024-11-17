@@ -1,0 +1,84 @@
+<html>
+<head>
+	<style type="text/css">
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			background: url(bike5.jpg);
+			background-size: cover;
+
+		}
+
+
+			.container{
+				font-family: arial;
+				color: white;
+				background-color: rgba(0,0,0,0.5);
+				padding: 40px;
+			
+				
+			}
+
+			h2{
+				padding-top: 40px;
+			}
+
+			
+				
+
+				button{
+					font-family: arial;
+					border: 1 solid white;
+					color: white;
+				font-size: 17px;
+				text-transform: uppercase;
+				padding: 7px 13px;
+				border-radius: 3px;
+				background: black;
+
+				}
+
+				 button:hover{
+				background: skyblue;
+				transition: .5s;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+			<center><h2>Fill the information below to rent a bike</h2></center><br><br><br>
+	<form align="center"  action="store.php" method="POST">
+		<label>FirstName:<input type="textbox"  required name="fname"></label>
+        <label>MiddleName:<input type="textbox"  name="mname"></label>
+        <label>LastName:<input type="textbox" required name="lname"></label><br><br>
+        <label>Address:<input type="textbox" required name="address"></label>
+		<label>MobileNumber:<input type="textbox" required name="num">
+		<label>email:<input type="email"  name="email"></label><br><br>
+		<label>Rented date:<input type="date" required name="rdate"></label>
+		<label>Returned date:<input type="date" required name="sdate"></label><br><br>
+		<label>Bike model:</label>
+		<select name="model">
+			<option>2015 KTM RC 200cc</option>
+			<option>2018 Crossfire rm 250cc</option>
+			<option>2019 Ducati Monster 400cc</option>
+			<option>2020 BMW 1250 GS 300cc</option>
+			<option>Pulsar 200NS 200cc</option>
+			<option>2019 Harly Davidson LiveWire 250cc</option>
+			<option>2019 Yamaha R15 V3 200cc</option>
+			<option>Royal Enfield classic 350cc</option>
+			<option>2022 Yamaha MT 15 200cc</option>
+		</select><br><br>
+		
+		
+		<button type="reset">Reset</button>
+		<button type="submit">Submit</button>
+	
+
+        </form>
+    </div>
+</body>
+</html>
